@@ -25,11 +25,10 @@ folders = ['1', '2', '3']
 
 data_columns = ['P-PDG', 'P-TPT', 'T-TPT', 'P-MON-CKP', 'T-JUS-CKP', 'P-JUS-CKGL', 'T-JUS-CKGL', 'QGL']
 
-
 nixtla_client = NixtlaClient(
-    # defaults to os.environ.get("NIXTLA_API_KEY")
-    api_key = 'nixak-ydVyUIawnVh68qhFTgxxWrCKzLNvOKmLVNpDr24m94DHR4e1sYYkntIF0iyIhjhUQLmjEUypp4vGORXe'
+    api_key=os.environ.get("NIXTLA_API_KEY")
 )
+
 
 # %%
 def detect_anomalies_online(df, time_col, target_col):
@@ -251,6 +250,8 @@ def detect_all_anomalies_dates_by_parameter(start_date, end_date, parameter):
                     # Select only timestamp, parameter and class columns
                     selected_parameter_df = filtered_df[["timestamp", parameter, "class"]]
                     return detect_anomalies(selected_parameter_df, 0, selected_parameter_df.shape[0])
+
+
 
 
 
