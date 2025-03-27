@@ -1,236 +1,50 @@
 
-2025-03-26 12:57:47 - INFO - Processing general flow
+2025-03-26 17:29:40 - INFO - Processing general flow
 
-2025-03-26 12:57:47 - INFO - Routing general flow request
+2025-03-26 17:29:40 - INFO - Routing general flow request
 
-2025-03-26 12:57:48 - INFO - Request routed as: detect_anomaly with confidence: 0.95
+2025-03-26 17:29:41 - INFO - Request routed as: check_documentation with confidence: 0.95
 
-2025-03-26 12:57:48 - INFO - Processing anomaly detection request
-
-2025-03-26 12:57:48 - INFO - Routing anomaly detection request
-
-2025-03-26 12:57:49 - INFO - Request routed as: detect_anomaly_by_dates with confidence: 0.95
-
-2025-03-26 12:57:49 - INFO - Processing detection by dates
-
-2025-03-26 12:57:51 - INFO - Validating inputs...
-
-2025-03-26 12:57:51 - INFO - Preprocessing dataframes...
-
-2025-03-26 12:57:51 - INFO - Using future exogenous features: ['P-PDG', 'P-TPT', 'T-TPT', 'P-MON-CKP', 'T-JUS-CKP', 'P-JUS-CKGL', 'T-JUS-CKGL', 'QGL']
-
-2025-03-26 12:57:51 - INFO - Calling Online Anomaly Detector Endpoint...
-
-2025-03-26 12:58:03 - INFO - New detection by dates: {
-  "type_anomaly": 1,
-  "start_date": "2014-01-24T19:00:00Z",
-  "end_date": "2014-01-24T22:00:00Z",
-  "temperature": 1.8320532514,
-  "response": "Anomalies found during the specified time range. Total rows returned: 30. Anomalies count: True: 30, False: 0."
-}
-
-2025-03-26 12:58:03 - INFO - Anomaly identification Detect an anomaly dates 2014-01-24T19:00:00Z and 2014-01-24T22:00:00Z. The type of anomaly is 1
-
-2025-03-26 12:58:03 - INFO - Anomaly identification 1
-
-2025-03-26 12:58:03 - INFO - Processing detection by dates
-
-2025-03-26 12:58:05 - INFO - Anomaly identification result
-
-2025-03-26 12:58:09 - INFO - Documentation search: {
-  "source": "Oil and gas production handbook ed3x0_web.pdf - p. 146, 147",
-  "title": "Annual Greenhouse Gas Emissions by Sector",
-  "text": "Please provide your question regarding anomalies in oil and gas.",
-  "response": "Based on the documentation reviewed, no specific anomalies were identified related to thermal energy balance within the context provided. However, we chat about the trends and discrepancies in greenhouse gas emissions across various sectors. The analysis indicates that discrepancies can arise due to varying methodologies in emission reporting and energy use efficiency, which could hint at issues in thermal energy balance. Total anomalies found: 0 True, 0 False.",
+2025-03-26 17:29:45 - INFO - Documentation search: {
+  "source": "Oil and gas production handbook ed3x0_web.pdf - p. 73",
+  "title": "5.3.4 Nitrogen rejection",
+  "text": "What are the main processes for removing acid gases from natural gas?",
+  "response": "I found documentation related to your request about Acid gas removal. Total anomalies found: 1. True: 1, False: 0.",
   "success": true,
-  "message": "No specific anomalies detected related to thermal energy balance, but trends suggest potential discrepancies in emissions."
+  "message": "Here is the documentation regarding Acid gas removal."
 }
 
-2025-03-26 12:58:09 - INFO - Anomaly documentation result
+2025-03-26 17:29:45 - INFO - Anomaly documentation result
 
-2025-03-26 12:58:09 - INFO - Processing anomaly detection action
+2025-03-26 17:29:45 - INFO - Processing anomaly detection action
 
-2025-03-26 12:58:09 - INFO - Routing anomaly detection action
+2025-03-26 17:29:45 - INFO - Routing anomaly detection action
 
-2025-03-26 12:58:10 - INFO - Request routed as: send_email_notification with confidence: 0.0
+2025-03-26 17:29:46 - INFO - Request routed as: other with confidence: 0.8
 
-2025-03-26 12:58:10 - WARNING - Low confidence score: 0.0
+2025-03-26 17:29:46 - INFO - Calling action send email notification
 
-2025-03-26 12:58:10 - INFO - Processing general flow
+2025-03-26 17:29:48 - INFO - Email sent successfully
 
-2025-03-26 12:58:10 - INFO - Routing general flow request
-
-2025-03-26 12:58:10 - INFO - Request routed as: detect_anomaly with confidence: 0.95
-
-2025-03-26 12:58:10 - INFO - Processing anomaly detection request
-
-2025-03-26 12:58:10 - INFO - Routing anomaly detection request
-
-2025-03-26 12:58:11 - INFO - Request routed as: detect_anomaly_by_dates_by_parameter with confidence: 0.95
-
-2025-03-26 12:58:11 - INFO - Processing detection by dates
-
-2025-03-26 12:58:13 - INFO - Validating inputs...
-
-2025-03-26 12:58:13 - INFO - Preprocessing dataframes...
-
-2025-03-26 12:58:13 - INFO - Using future exogenous features: ['T-JUS-CKP']
-
-2025-03-26 12:58:13 - INFO - Calling Online Anomaly Detector Endpoint...
-
-2025-03-26 12:58:26 - INFO - New detection by dates and parameter: {
-  "type_anomaly": 1,
-  "start_date": "2014-01-24T19:00:00Z",
-  "end_date": "2014-01-24T22:00:00Z",
-  "parameter": "T-JUS-CKP",
-  "temperature": 1.0,
-  "response": "Anomalies detected for the parameter T-JUS-CKP between January 24th 2014 at 7:00 PM and 10:00 PM. A total of 30 values were analyzed, with 30 anomalies detected and 0 non-anomalies. \n\n| Anomaly Status | Count |\n|----------------|-------|\n| True           | 30    |\n| False          | 0     |"
+2025-03-26 17:29:50 - INFO - Send an email notification: {
+  "to": "xxx@gmail.com",
+  "subject": "Anomaly Detected Notification",
+  "body": "An anomaly was detected in the system. Please refer to the documentation regarding Acid Gas Removal for more information. Let us know if there are any questions or if further assistance is needed.",
+  "response": "An email notification about the detected anomaly was successfully sent to xxx@gmail.com."
 }
 
-2025-03-26 12:58:26 - INFO - Anomaly identification Detect an anomaly dates for specific parameter desviation 2014-01-24T19:00:00Z and 2014-01-24T22:00:00Z. The type of anomaly is 1
+2025-03-26 17:29:50 - INFO - Anomaly action result
 
-2025-03-26 12:58:26 - INFO - Anomaly identification 1
+2025-03-26 17:29:50 - INFO - Processing general flow
 
-2025-03-26 12:58:26 - INFO - Processing detection by dates
+2025-03-26 17:29:50 - INFO - Routing general flow request
 
-2025-03-26 12:58:29 - INFO - Anomaly identification result
+2025-03-26 17:29:51 - INFO - Request routed as: apply_action with confidence: 0.9
 
-2025-03-26 12:58:33 - INFO - Documentation search: {
-  "source": "Oil and gas production handbook ed3x0_web.pdf - p. 146, 147",
-  "title": "Annual Greenhouse Gas Emissions by Sector",
-  "text": "Please ask your question about anomalies in oil and gas, and I will do my best to assist you based on the provided context.",
-  "response": "The analysis of the annual greenhouse gas emissions by sector reveals deviations from expected thermal energy balance, indicating potential anomalies in the data. There are 3 entries marked True and 15 entries marked False regarding anomalies detected, which suggests there are some significant concerns identified. Here is a summary of the anomaly results: \n\n| Anomaly Detected | Count |\n|-------------------|-------|\n| True              | 3     |\n| False             | 15    |",
-  "success": true,
-  "message": "The anomaly detection process was successful, and I have summarized the findings related to greenhouse gas emissions."
-}
+2025-03-26 17:29:51 - INFO - Processing anomaly detection action
 
-2025-03-26 12:58:33 - INFO - Anomaly documentation result
+2025-03-26 17:29:51 - INFO - Routing anomaly detection action
 
-2025-03-26 12:58:33 - INFO - Processing anomaly detection action
+2025-03-26 17:29:51 - INFO - Request routed as: send_email_notification with confidence: 1.0
 
-2025-03-26 12:58:33 - INFO - Routing anomaly detection action
-
-2025-03-26 12:58:34 - INFO - Request routed as: send_email_notification with confidence: 0.8
-
-2025-03-26 12:58:34 - INFO - Calling action send email notification
-
-2025-03-26 12:58:37 - INFO - Email sent successfully
-
-2025-03-26 12:58:43 - INFO - Send an email notification: {
-  "to": "adrianadiazgranados@gmail.com",
-  "subject": "Anomaly Detected in Annual Greenhouse Gas Emissions",
-  "body": "Dear Adriana Diazgranados,\n\nWe have detected anomalies in the analysis of annual greenhouse gas emissions by sector. The findings reveal deviations from expected thermal energy balance, suggesting potential issues with the data. Below is a summary of the detected anomalies:\n\n| Anomaly Detected | Count |\n|-------------------|-------|\n| True              | 3     |\n| False             | 15    |\n\nThe presence of such anomalies indicates significant concerns identified in the data.\n\nPlease let us know if you need further analysis or details regarding this matter.\n\nBest regards,\n\n[Your Name]",
-  "response": "An email notification has been successfully sent to adrianadiazgranados@gmail.com regarding the detected anomalies in annual greenhouse gas emissions."
-}
-
-2025-03-26 12:58:43 - INFO - Anomaly action result
-
-2025-03-26 12:58:43 - INFO - Processing general flow
-
-2025-03-26 12:58:43 - INFO - Routing general flow request
-
-2025-03-26 12:58:44 - INFO - Request routed as: identify_anomaly_by_id with confidence: 0.95
-
-2025-03-26 12:58:44 - INFO - Processing event modification request
-
-2025-03-26 12:58:48 - INFO - Identified anomaly: {
-  "response": "The analysis of the anomaly with ID 1 has detected irregularities in the dataset. The findings indicate that there are 10 instances of True anomalies and 40 instances of False anomalies. This information has been summarized in the table below:\n\n| Anomaly Status | Count |\n|----------------|-------|\n| True           | 10    |\n| False          | 40    |\n\nIn total, 50 rows were analyzed with respect to this anomaly. Please review the details for further insights.",
-  "success": true,
-  "message": "Anomaly details retrieved successfully.",
-  "type_anomaly": 1
-}
-
-2025-03-26 12:58:48 - INFO - Processing detection by dates
-
-2025-03-26 12:58:50 - INFO - Anomaly identification result
-
-2025-03-26 12:58:54 - INFO - Documentation search: {
-  "source": "Oil and gas production handbook ed3x0_web.pdf - p. 146, 147",
-  "title": "Annual Greenhouse Gas Emissions by Sector",
-  "text": "I'm here to help with any questions you have about anomalies in oil and gas based on the provided context. Please go ahead and ask your question.",
-  "response": "In the context of the thermal energy balance anomaly, there are concerns regarding how energy flows within the oil and gas production processes can lead to emissions inconsistencies. Based on the provided documentation, we identified 5 instances of True anomalies indicating discrepancies in thermal energy outputs versus expected values, and 10 instances of False anomalies with no striking deviations found. This suggests that while there are significant concerns regarding thermal balance, not all sectors exhibit these anomalies consistently.",
-  "success": true,
-  "message": "Anomaly detection completed successfully. Here are the details."
-}
-
-2025-03-26 12:58:54 - INFO - Anomaly documentation result
-
-2025-03-26 12:58:54 - INFO - Processing anomaly detection action
-
-2025-03-26 12:58:54 - INFO - Routing anomaly detection action
-
-2025-03-26 12:58:56 - INFO - Request routed as: send_email_notification with confidence: 0.8
-
-2025-03-26 12:58:56 - INFO - Calling action send email notification
-
-2025-03-26 12:58:58 - INFO - Email sent successfully
-
-2025-03-26 12:59:01 - INFO - Send an email notification: {
-  "to": "adrianadiazgranados@gmail.com",
-  "subject": "Thermal Energy Balance Anomalies Detected",
-  "body": "Dear Adrian,\n\nWe have detected anomalies in the context of thermal energy balance within the oil and gas production processes. Below is a summary of our findings:\n\n- **True Anomalies Detected:** 5 instances indicating discrepancies in thermal energy outputs versus expected values.\n- **False Anomalies Detected:** 10 instances with no striking deviations found.\n\nThese findings suggest that while there are significant concerns regarding the thermal energy balance, not all sectors consistently exhibit these anomalies.\n\nPlease let us know if you have any questions or need further details.\n\nBest regards,\n[Your Name]",
-  "response": "The email notification regarding the detected thermal energy balance anomalies has been successfully sent to adrianadiazgranados@gmail.com."
-}
-
-2025-03-26 12:59:01 - INFO - Anomaly action result
-
-2025-03-26 12:59:01 - INFO - Processing general flow
-
-2025-03-26 12:59:01 - INFO - Routing general flow request
-
-2025-03-26 12:59:02 - INFO - Request routed as: check_documentation with confidence: 0.95
-
-2025-03-26 12:59:05 - INFO - Documentation search: {
-  "source": "Oil and gas production handbook ed3x0_web.pdf - p. 5, 6, 7, 8",
-  "title": "CONTENTS",
-  "text": "What anomaly would the HVAC system help prevent in equipment rooms?",
-  "response": "The HVAC system is designed to prevent anomalies related to temperature fluctuations and humidity levels that can affect equipment performance in equipment rooms. In total, 1 row of anomalies was found, with 0 True and 1 False.",
-  "success": true,
-  "message": "The documentation regarding the issues with thermal energy balance has been identified successfully."
-}
-
-2025-03-26 12:59:05 - INFO - Anomaly documentation result
-
-2025-03-26 12:59:05 - INFO - Processing anomaly detection action
-
-2025-03-26 12:59:05 - INFO - Routing anomaly detection action
-
-2025-03-26 12:59:05 - INFO - Request routed as: send_email_notification with confidence: 0.9
-
-2025-03-26 12:59:05 - INFO - Calling action send email notification
-
-2025-03-26 12:59:07 - INFO - Email sent successfully
-
-2025-03-26 12:59:08 - INFO - Send an email notification: {
-  "to": "adrianadiazgranados@gmail.com",
-  "subject": "Anomaly Detected - Thermal Energy Balance Issue",
-  "body": "An anomaly was detected with the thermal energy balance. \n\nSummary Information: \n\nRequest for documentation regarding issues with thermal energy balance. \n\nPlease review the issue and take the necessary actions. \n\nBest regards,\n[Your Name]",
-  "response": "An email notification has been successfully sent to adrianadiazgranados@gmail.com regarding the detected anomaly related to thermal energy balance."
-}
-
-2025-03-26 12:59:08 - INFO - Anomaly action result
-
-2025-03-26 12:59:08 - INFO - Processing general flow
-
-2025-03-26 12:59:08 - INFO - Routing general flow request
-
-2025-03-26 12:59:09 - INFO - Request routed as: apply_action with confidence: 0.9
-
-2025-03-26 12:59:09 - INFO - Processing anomaly detection action
-
-2025-03-26 12:59:09 - INFO - Routing anomaly detection action
-
-2025-03-26 12:59:10 - INFO - Request routed as: send_email_notification with confidence: 0.9
-
-2025-03-26 12:59:10 - INFO - Calling action send email notification
-
-2025-03-26 12:59:15 - INFO - Email sent successfully
-
-2025-03-26 12:59:16 - INFO - Send an email notification: {
-  "to": "adrianadiazgranados@gmail.com",
-  "subject": "Anomaly Detected in Valve",
-  "body": "Dear Adriana,\n\nWe detected an anomaly in the valve. Please review the details and take the necessary action.\n\nThank you.",
-  "response": "The email notification has been successfully sent to adrianadiazgranados@gmail.com regarding the anomaly detection in the valve."
-}
-
-2025-03-26 12:59:16 - INFO - Anomaly action result
+2025-03-26 17:29:51 - INFO - Calling action send email notification
