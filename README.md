@@ -34,6 +34,9 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 
 - The AI agent autonomously determines the workflow tasks required to address the anomaly.
 - Each task is independent and uses different technologies to ensure effective resolution.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/6c7d9448-211f-49bb-b5ee-315455ec372d" />
+
   
 3.3 Outputs
 
@@ -50,6 +53,9 @@ The orchestrator and routers constitute the core of the AI agent’s decision-ma
 This logic enables the agent to function autonomously, adapting the sequence and selection of operations according to the type and content of the request.
 The main flow operates under a loop control mechanism.  
 The agent system employs OpenAI's API as LLM and Pydantic library to define structured request and response types
+
+<img width="900" height="729" alt="image" src="https://github.com/user-attachments/assets/3f569572-de3f-4ad4-994d-40c9ea1a2d8d" />
+
 
 
 ## 📊 Results
