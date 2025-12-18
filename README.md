@@ -43,7 +43,7 @@ This logic enables the agent to function autonomously, adapting the sequence and
 The main flow operates under a loop control mechanism.  
 The agent system employs OpenAI's API as LLM and Pydantic library to define structured request and response types.
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/3c418e6c-777b-4d5e-b158-027c2ef6f610" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/3c418e6c-777b-4d5e-b158-027c2ef6f610" />
 
 EXPERIMENTS
 
