@@ -33,6 +33,7 @@ The agent follows a four‑stage operational workflow: Detection → Classificat
 3.3 Outputs
 - Intermediate outputs include anomaly findings, summaries, and service calls.
 - The agent synthesizes a final natural‑language explanation describing the full reasoning and results.
+  
 
 4. Architecture
    
