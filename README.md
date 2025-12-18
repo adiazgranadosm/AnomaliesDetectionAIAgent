@@ -14,15 +14,16 @@ This project proposes an AI‑powered agent capable of orchestrating the full an
 The primary objectives of this work are:
 
 - Architectural Design
-- 
+  
 Develop a flexible and extensible architecture for deploying an AI agent capable of automating anomaly detection workflows across diverse industrial processes. The architecture must integrate seamlessly with existing enterprise systems and services.
 - Framework Development
-- 
+  
 Implement the architecture in Python using modern APIs and libraries to ensure maintainability and ease of extension. The agent must support data analysis, anomaly identification and classification, information retrieval from structured and unstructured sources, and dynamic decision‑making.
 
 - Validation Using Synthetic Data
-- 
+  
 Evaluate the framework using synthetic datasets that simulate a range of operational scenarios. Performance is assessed through metrics such as response precision, latency, and token utilization.
+
 - Demonstration of Practical Impact
   
 Show that the proposed solution effectively mitigates operational risks and enhances the reliability of industrial anomaly‑management processes.
