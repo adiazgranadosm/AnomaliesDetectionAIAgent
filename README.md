@@ -25,12 +25,12 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 
 ## System Overview
 
-3.1 Inputs
+### Inputs
 
 - A user request in natural language to verify, extract information from multiple sources or apply an action related to addressing the anomaly.
 - A CSV file from sensors or machinery to verify irregular patterns.
   
-3.2 Task Execution
+### Task Execution
 
 - The AI agent autonomously determines the workflow tasks required to address the anomaly.
 - Each task is independent and uses different technologies to ensure effective resolution.
@@ -38,7 +38,7 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6c7d9448-211f-49bb-b5ee-315455ec372d" />
 
   
-3.3 Outputs
+### Outputs
 
 - Tasks generate outputs such as findings, summaries, or service calls for for resolving the anomaly.
 - The agent consolidates and delivers a natural language summary of the process and results to the user.
