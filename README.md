@@ -29,8 +29,7 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 3.1 Inputs
 
 - A user request in natural language to verify, extract information from multiple sources or apply an action related to addressing the anomaly.
-- A CSV file from sensors or machinery to verify irregular patterns<img width="1443" height="90" alt="image" src="https://github.com/user-attachments/assets/a336b8fe-92e2-4afd-bc11-080f549bd18b" />
-
+- A CSV file from sensors or machinery to verify irregular patterns.
   
 3.2 Task Execution
 
