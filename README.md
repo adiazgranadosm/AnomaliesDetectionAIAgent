@@ -1,10 +1,10 @@
-**Anomaly Detection AI Agent Framework**
+# Anomaly Detection AI Agent Framework
 
-**Abstract**
+## Overview
 
 This repository presents a modular, AI‑driven framework for automating anomaly detection and response in industrial environments. The system integrates Large Language Models (LLMs), structured reasoning, and multi‑modal data processing to support end‑to‑end workflows including detection, classification, investigation, and corrective action. The framework is designed to be adaptable across heterogeneous industrial processes and to interface with existing organizational data sources, services, and operational tools.
 
-**1. Introduction**
+## Introduction
    
 Anomaly detection in industrial systems is crucial for identifying defects, errors, and deviations that, if undetected, could lead to accidents, ecological damage, and economic losses. Traditional methods are rule-based, while modern approaches use AI and machine learning.
 
@@ -13,8 +13,7 @@ Large Language Models (LLMs) facilitate real-time responses by interpreting natu
 Advancements in AI frameworks include Tools for external function invocation, Retrieval-Augmented Generation (RAG) for knowledge-based responses, and Long-Term Memory (LTM) for personalized interactions, further enhancing industrial AI applications.
 
 
-
-**3. Objectives**
+## Objectives
    
 1) Design a flexible framework architecture for deploying an Artificial Intelligence (AI) agent to automate the end-to-end anomaly detection process, proposing an architecture that can be adapted for different types of processes and integrating existing technical components and services within a company.
 
@@ -24,7 +23,7 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 
 4) Demonstrate that the implementation of this solution effectively mitigates or resolves risks and challenges inherent in industrial and corporate anomaly risks processes, thereby enhancing operational efficiency.
 
-**3. System Overview**
+## System Overview
 
 3.1 Inputs
 
@@ -42,7 +41,7 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 - The agent consolidates and delivers a natural language summary of the process and results to the user.
   
 
-4. Architecture
+## System Architecture
    
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/5622d1eb-3327-449a-96ea-8364535acfcb" />
 
@@ -53,7 +52,7 @@ The main flow operates under a loop control mechanism.  
 The agent system employs OpenAI's API as LLM and Pydantic library to define structured request and response types
 
 
-**5. Experiments**
+## 📊 Results
    
 A series of experiments were conducted using synthetic datasets to evaluate the agent’s performance across multiple anomaly scenarios.
 
