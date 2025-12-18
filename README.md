@@ -1,4 +1,4 @@
-Anomaly Detection AI Agent Framework
+**Anomaly Detection AI Agent Framework**
 
 **Abstract**
 This repository presents a modular, AI‑driven framework for automating anomaly detection and response in industrial environments. The system integrates Large Language Models (LLMs), structured reasoning, and multi‑modal data processing to support end‑to‑end workflows including detection, classification, investigation, and corrective action. The framework is designed to be adaptable across heterogeneous industrial processes and to interface with existing organizational data sources, services, and operational tools.
@@ -48,7 +48,7 @@ The system uses:
 - OpenAI LLMs for reasoning and natural‑language interpretation
 - Pydantic for defining structured request/response schemas
 - Python‑based tools for data processing, retrieval, and action execution
-- 
+
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/3c418e6c-777b-4d5e-b158-027c2ef6f610" />
 
 **5. Experiments**
