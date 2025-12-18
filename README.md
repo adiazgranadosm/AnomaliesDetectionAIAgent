@@ -25,8 +25,6 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 4) Demonstrate that the implementation of this solution effectively mitigates or resolves risks and challenges inherent in industrial and corporate anomaly risks processes, thereby enhancing operational efficiency.
 
 **3. System Overview**
-   
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/69e5238e-ca5b-40d8-a3d3-b5697af97861" />
 
 3.1 Inputs
 
