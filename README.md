@@ -18,7 +18,7 @@ The AI agent establishes a four-step workflow (Detection, Classification, Invest
 
 SOLUTION: 
 
-<img width="1056" height="547" alt="image" src="https://github.com/user-attachments/assets/69e5238e-ca5b-40d8-a3d3-b5697af97861" />
+<img width="600"  alt="image" src="https://github.com/user-attachments/assets/69e5238e-ca5b-40d8-a3d3-b5697af97861" />
 
 
 1. Inputs:
@@ -35,7 +35,7 @@ The agent consolidates and delivers a natural language summary of the process an
 
 ARCHITECTURE:
 
-<img width="1110" height="399" alt="image" src="https://github.com/user-attachments/assets/5622d1eb-3327-449a-96ea-8364535acfcb" />
+<img width="800"  alt="image" src="https://github.com/user-attachments/assets/5622d1eb-3327-449a-96ea-8364535acfcb" />
 
 
 The orchestrator and routers constitute the core of the AI agent’s decision-making framework. 
@@ -43,7 +43,7 @@ This logic enables the agent to function autonomously, adapting the sequence and
 The main flow operates under a loop control mechanism.  
 The agent system employs OpenAI's API as LLM and Pydantic library to define structured request and response types.
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3c418e6c-777b-4d5e-b158-027c2ef6f610" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/3c418e6c-777b-4d5e-b158-027c2ef6f610" />
 
 EXPERIMENTS
 
