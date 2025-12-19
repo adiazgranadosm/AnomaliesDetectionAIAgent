@@ -84,6 +84,18 @@ These experiments demonstrate the agent’s ability to:
 - Retrieve relevant information from heterogeneous sources
 - Produce coherent, actionable summaries
 
+## Repo structure
+
+- Agent_detection.py: Implements the LSTM autoencoder architecture and inference logic to identify statistical deviations in multivariate time-series data.
+
+- Agent_memory.py: Manages the Retrieval-Augmented Generation (RAG) pipeline by indexing technical documents and retrieving context-aware solutions for detected anomalies.
+
+- Agent_orchestrator.ipynb: Acts as the central cognitive controller, utilizing an LLM to interpret user prompts and coordinate the autonomous execution of detection and memory tools.
+
+- Agent_RAG_investigation.ipynb: Provides a sandbox for testing document parsing and vector retrieval strategies before integration into the main agent.
+
+- Agent_data_generator.ipynb: Generates synthetic industrial sensor datasets to simulate various fault scenarios for model training and system validation.
+
 ## License
 
 This project is for academic research purposes.
