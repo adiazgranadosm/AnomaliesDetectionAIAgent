@@ -1,5 +1,9 @@
 # Anomaly Detection AI Agent Framework
 
+[![Python](https://img.shields.io/badge/Python-3.10+-yellow.svg)](https://www.python.org/)
+[![OpenAI](https://img.shields.io/badge/LLM-OpenAI%20%7C%20Anthropic-green)](https://platform.openai.com/)
+[![RAG](https://img.shields.io/badge/RAG-Docling-blue)](https://github.com/DS4SD/docling)
+
 ## Overview
 
 This repository presents a modular, AI‑driven framework for automating anomaly detection and response in industrial environments. The system integrates Large Language Models (LLMs), structured reasoning, and multi‑modal data processing to support end‑to‑end workflows including detection, classification, investigation, and corrective action. The framework is designed to be adaptable across heterogeneous industrial processes and to interface with existing organizational data sources, services, and operational tools.
@@ -12,7 +16,6 @@ AI-powered automation is proposed to enhance anomaly response by integrating mon
 Large Language Models (LLMs) facilitate real-time responses by interpreting natural language prompts and coordinating that interact with databases, machine learning models, and external APIs.
 Advancements in AI frameworks include Tools for external function invocation, Retrieval-Augmented Generation (RAG) for knowledge-based responses, and Long-Term Memory (LTM) for personalized interactions, further enhancing industrial AI applications.
 
-
 ## Objectives
    
 1) Design a flexible framework architecture for deploying an Artificial Intelligence (AI) agent to automate the end-to-end anomaly detection process, proposing an architecture that can be adapted for different types of processes and integrating existing technical components and services within a company.
@@ -23,6 +26,13 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 
 4) Demonstrate that the implementation of this solution effectively mitigates or resolves risks and challenges inherent in industrial and corporate anomaly risks processes, thereby enhancing operational efficiency.
 
+## Key Features
+
+* **Autonomous Orchestration:** The Agent translates natural language objectives into a sequential execution of tasks (Monitor $\to$ Analyze $\to$ Act).
+* **Hybrid Intelligence:** Combines the numerical precision of LSTM models (for detecting signal deviations) with the semantic reasoning of LLMs (for root cause analysis).
+* **RAG & Long-Term Memory:** Uses **IBM Docling** to parse unstructured technical documentation, allowing the agent to retrieve relevant repair protocols based on specific error codes.
+* **Proactive Response:** Goes beyond simple alerting by classifying anomalies and suggesting preventive/corrective actions based on historical insights.
+* 
 ## System Overview
 
 ### Inputs
@@ -74,6 +84,9 @@ These experiments demonstrate the agent’s ability to:
 - Retrieve relevant information from heterogeneous sources
 - Produce coherent, actionable summaries
 
+## License
+
+This project is for academic research purposes.
 
 
 
