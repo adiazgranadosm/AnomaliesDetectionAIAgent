@@ -96,6 +96,9 @@ These experiments demonstrate the agent’s ability to:
 
 - Agent_data_generator.ipynb: Generates synthetic industrial sensor datasets to simulate various fault scenarios for model training and system validation.
 
+- documents/: Directory for unstructured PDF manuals and technical guides used by the RAG system.
+
+
 ## License
 
 This project is for academic research purposes.
