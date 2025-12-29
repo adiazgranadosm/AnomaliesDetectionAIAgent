@@ -32,7 +32,7 @@ Advancements in AI frameworks include Tools for external function invocation, Re
 * **Hybrid Intelligence:** Combines the numerical precision of LSTM models (for detecting signal deviations) with the semantic reasoning of LLMs (for root cause analysis).
 * **RAG & Long-Term Memory:** Uses **IBM Docling** to parse unstructured technical documentation, allowing the agent to retrieve relevant repair protocols based on specific error codes.
 * **Proactive Response:** Goes beyond simple alerting by classifying anomalies and suggesting preventive/corrective actions based on historical insights.
-* 
+  
 ## System Overview
 
 ### Inputs
